@@ -14,7 +14,6 @@
 //= require jquery.turbolinks
 //= require jquery.easing
 //= require bootstrap-sprockets
-//= require new-age
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
