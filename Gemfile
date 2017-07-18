@@ -58,3 +58,4 @@ gem 'jquery-rails'
 gem 'jquery-turbolinks'
 gem 'jquery-easing-rails'
 gem 'bootbox-rails', '~>0.4'
+gem "figaro"

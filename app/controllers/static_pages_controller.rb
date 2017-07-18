@@ -8,7 +8,7 @@ class StaticPagesController < ApplicationController
         if contact_message_params.values_at(:name, :email).any?(&:blank?)
           render json: "É necessário preencher nome e email.", status: :unprocessable_entity
         else
-
+          BasicMailer.contact_email(contact_message_params).deliver_now
         end
       end
     end
