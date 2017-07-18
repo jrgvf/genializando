@@ -72,8 +72,8 @@
         <h2 class="section-heading">Em construção!</h2>
         <p>Nosso aplicativo estará disponível em breve em qualquer dispositivo móvel!</p>
         <div class="badges">
-          <a class="badge-link" href="#"><%= image_tag(image_path('google-play-badge.svg'), alt: '') %></a>
-          <a class="badge-link" href="#"><%= image_tag(image_path('app-store-badge.svg'), alt: '') %></a>
+          <a onClick="ga('send', {hitType: 'pageview', page: '/GooglePlay'});" class="badge-link" href="#"><%= image_tag(image_path('google-play-badge.svg'), alt: '') %></a>
+          <a onClick="ga('send', {hitType: 'pageview', page: '/AppStore'});" class="badge-link" href="#"><%= image_tag(image_path('app-store-badge.svg'), alt: '') %></a>
         </div>
       </div>
     </div>
@@ -84,7 +84,7 @@
   <div class="cta-content">
     <div class="container">
       <h2>Crianças conectadas e aprendendo juntas.</h2>
-      <a href="https://www.facebook.com/Genializando-App-1554727127933349/" target="_blank" class="btn btn-outline btn-xl page-scroll">Conecte-se agora!</a>
+      <a onClick="ga('send', {hitType: 'pageview', page: '/Facebook'});" href="https://www.facebook.com/Genializando-App-1554727127933349/" target="_blank" class="btn btn-outline btn-xl page-scroll">Conecte-se agora!</a>
     </div>
   </div>
   <div class="overlay"></div>
