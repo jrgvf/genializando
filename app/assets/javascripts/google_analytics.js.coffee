@@ -17,7 +17,7 @@ class @GoogleAnalytics
       a.src = g
       m.parentNode.insertBefore a, m
       return
-    ) window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga'
+    ) window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga'
     ga 'create', GoogleAnalytics.analyticsId(), 'auto'
 
     # If Turbolinks is supported, set up a callback to track pageviews on page:change.
