@@ -1,8 +1,27 @@
+.form-group input, .form-group textarea {
+  padding: 20px;
+}
+
+input.form-control {
+  height: auto;
+}
+
+.form-group textarea.form-control {
+  height: 216px;
+}
+
+.information {
+  background-color: #fff;
+  padding: 0;
+  font-size: 1em;
+}
+
 /*!
  * Start Bootstrap - New Age v3.3.7 (http://startbootstrap.com/template-overviews/new-age)
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+
 .heading-font {
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
@@ -36,7 +55,8 @@ a:focus {
 }
 hr {
   max-width: 100px;
-  margin: 25px auto 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
   border-width: 1px;
   border-color: rgba(34, 34, 34, 0.1);
 }

@@ -76,6 +76,40 @@
           <a onClick="ga('send', {hitType: 'pageview', page: '/AppStore'});" class="badge-link" href="#"><%= image_tag(image_path('app-store-badge.svg'), alt: '') %></a>
         </div>
       </div>
+
+      <div class="col-md-12">
+        <hr class="light">
+        <h2 class="section-heading">Deixe uma mensagem</h2>
+        <div class="col-md-12">
+          <hr class="light">
+          <%= form_tag contact_message_path, remote: true, id: "contact_message" do |f| %>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <%= text_field_tag :name, nil, class: "form-control", placeholder: "Qual é o seu nome? *" %>
+                </div>
+                <div class="form-group">
+                  <%= email_field_tag :email, nil, class: "form-control", placeholder: "Qual é o seu email? *" %>
+                </div>
+                <div class="form-group">
+                  <%= text_field_tag :childrens, nil, class: "form-control", placeholder: "Quantos filhos você tem?" %>
+                </div>
+                <div class="form-group">
+                  <%= text_field_tag :fone, nil, class: "form-control", placeholder: "Qual é o seu Telefone com DDD?" %>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <%= text_area_tag :message, nil, class: "form-control", placeholder: "Gostaria de deixar algum comentário ?" %>
+                </div>
+              </div>
+              <%= submit_tag 'Enviar', class: "btn btn-default btn-xl" %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+      
+
     </div>
   </div>
 </section>
